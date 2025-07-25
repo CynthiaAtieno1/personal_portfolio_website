@@ -70,5 +70,35 @@ body {
   .section h2 {
     font-size: 20px;
   }
+}  
+/* Default light theme */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
 }
+
+button#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode button#theme-toggle {
+  background-color: #333;
+  color: #fff;
+}
+
+
 
